@@ -1,0 +1,17 @@
+[
+  {
+    "href": "https://twitter.com",
+    "title": "Twitter updates",
+    "body": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor."
+  },
+  {
+    "href": "https://linkedin.com",
+    "title": "LinkedIn updates",
+    "body": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor."
+  },
+  {
+    "href": "https://google.com",
+    "title": "Google updates",
+    "body": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor."
+  }
+]
