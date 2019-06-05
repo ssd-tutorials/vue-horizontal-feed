@@ -1,14 +1,17 @@
 {
   "devDependencies": {
-    "axios": "^0.15.3",
-    "babel-polyfill": "^6.22.0",
-    "laravel-mix": "^0.7.5",
-    "vue": "^2.1.10"
+    "axios": "^0.19.0",
+    "babel-polyfill": "^6.26.0",
+    "cross-env": "^5.2.0",
+    "laravel-mix": "^4.0.16",
+    "vue": "^2.6.10"
   },
   "scripts": {
-    "dev": "cross-env NODE_ENV=development webpack --progress --hide-modules",
-    "watch": "cross-env NODE_ENV=development webpack --watch --progress --hide-modules",
-    "hmr": "cross-env NODE_ENV=development webpack-dev-server --inline --hot",
-    "production": "cross-env NODE_ENV=production webpack --progress --hide-modules"
+    "dev": "npm run development",
+    "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "npm run development -- --watch",
+    "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "prod": "npm run production",
+    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
   }
 }
